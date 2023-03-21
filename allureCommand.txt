@@ -1,0 +1,10 @@
+// install allure
+npm i -D allure-playwright
+npm i -D allure-commandline
+
+// generate report
+- npx allure generate allure-results --clean
+- npx allure open allure-report
+
+// open report
+- allure serve

@@ -1,0 +1,32 @@
+{
+  "name": "playwright_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:Chrome": "playwright test --config=playwright.config.ts --project=Chrome",
+    "test:Edge": "playwright test --config=playwright.config.ts --project=Edge",
+    "test:Chromium": "playwright test --config=playwright.config.ts --project=Chromium",
+    "test:Firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "test:Webkit": "playwright test --config=playwright.config.ts --project=Webkit"
+  },
+  "dev": "",
+  "keywords": [
+    "playwright tutorial"
+  ],
+  "author": "Ganesh Poul",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2",
+    "@types/adm-zip": "^0.5.0",
+    "allure-commandline": "^2.21.0",
+    "allure-playwright": "^2.1.0",
+    "moment": "^2.29.1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "playwright": "^1.31.0",
+    "rimraf": "^4.4.0"
+  }
+}
