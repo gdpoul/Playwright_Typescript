@@ -1,0 +1,3 @@
+docker pull mcr.microsoft.com/playwright:v1.31.0-focal
+docker network create Playwright-Network
+docker run -d -p 4444:4440 --net Playwright-Network --name Playwright-Typescript mcr.microsoft.com/playwright:v1.31.0-focal
