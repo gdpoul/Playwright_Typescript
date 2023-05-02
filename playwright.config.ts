@@ -1,9 +1,8 @@
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig={
-  testMatch:["D:/Playwright_Typescript/tests/OrangeHrm.test.ts"],
-  // grep: [new RegExp("@smoke")]
-  // testDir:"./tests",
+   testMatch: /.*.ts/,
+  // testMatch:["D:/Playwright_Typescript/tests/OrangeHrm.test.ts"],
   timeout: 60000,
   retries:0,
 
@@ -11,6 +10,7 @@ const config: PlaywrightTestConfig={
   globalTeardown: './helper/global-teardown.ts',
   use:   
   {
+    viewport:null,
     browserName:"chromium",
     headless: false,
     screenshot: "only-on-failure",
@@ -18,7 +18,7 @@ const config: PlaywrightTestConfig={
     trace:"retain-on-failure",
     launchOptions:
     {    
-      args:['--allow-running-insecure-content']
+      args:['--start-maximized','--allow-running-insecure-content']
     }
   },
 

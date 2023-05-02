@@ -1,9 +1,5 @@
 import { test as myTest } from "@playwright/test";
 
-type ganesh = {
-    age: number,
-    email: string
-}
 
 const myFixtureTest = myTest.extend<{
     age: number,

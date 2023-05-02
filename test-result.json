@@ -19,7 +19,7 @@
         "testDir": "d:/Playwright_Typescript",
         "testIgnore": [],
         "testMatch": [
-          "D:/Playwright_Typescript/tests/OrangeHrm.test.ts"
+          "/.*.ts/"
         ],
         "timeout": 60000
       }
@@ -62,113 +62,20 @@
   },
   "suites": [
     {
-      "title": "tests\\OrangeHrm.test.ts",
-      "file": "tests/OrangeHrm.test.ts",
+      "title": "pomtests\\AddToCartUsingFixture.test.ts",
+      "file": "pomtests/AddToCartUsingFixture.test.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Login Page Test",
-          "file": "tests/OrangeHrm.test.ts",
-          "line": 5,
+          "title": "SmokeTest",
+          "file": "pomtests/AddToCartUsingFixture.test.ts",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "TC001",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 26138,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-03-21T09:46:28.056Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f0ce0546f8051ee82333-3f139e195fdccfde3ab4",
-              "file": "tests/OrangeHrm.test.ts",
-              "line": 12,
-              "column": 9
-            },
-            {
-              "title": "TC002",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 10867,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-03-21T09:47:00.052Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f0ce0546f8051ee82333-4b0b8e17779542ad6c3a",
-              "file": "tests/OrangeHrm.test.ts",
-              "line": 17,
-              "column": 9
-            },
-            {
-              "title": "TC003",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 11409,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2023-03-21T09:47:10.920Z",
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f0ce0546f8051ee82333-1d0ae32116a01ec85c9d",
-              "file": "tests/OrangeHrm.test.ts",
-              "line": 23,
-              "column": 9
-            },
-            {
-              "title": "TC004",
+              "title": "Register test_01",
               "ok": false,
               "tags": [],
               "tests": [
@@ -181,62 +88,86 @@
                     {
                       "workerIndex": 0,
                       "status": "failed",
-                      "duration": 4997,
+                      "duration": 29295,
                       "error": {
-                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Login\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//h5')\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//h5')\u001b[22m\n",
-                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Login\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//h5')\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//h5')\u001b[22m\n\n    at d:\\Playwright_Typescript\\tests\\OrangeHrm.test.ts:26:30"
+                        "message": "locator.type: Target closed\n=========================== logs ===========================\nwaiting for locator('#input-firstname')\n============================================================",
+                        "stack": "locator.type: Target closed\n=========================== logs ===========================\nwaiting for locator('#input-firstname')\n============================================================\n    at RegisterPage.enterFirstName (d:\\Playwright_Typescript\\pages\\registerPage.ts:10:10)\n    at d:\\Playwright_Typescript\\pomtests\\AddToCartUsingFixture.test.ts:15:28"
                       },
                       "errors": [
                         {
                           "location": {
-                            "file": "d:\\Playwright_Typescript\\tests\\OrangeHrm.test.ts",
-                            "column": 30,
-                            "line": 26
-                          },
-                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected string: \u001b[32m\"Login\"\u001b[39m\nReceived string: \u001b[31m\"\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toContainText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//h5')\u001b[22m\n\u001b[2m  - waiting for locator('xpath=//h5')\u001b[22m\n\n\n\u001b[90m   at \u001b[39mtests\\OrangeHrm.test.ts:26\n\n  24 |         const loginHeading= await page.locator(\"//h5\");\n  25 |         await page.waitForLoadState(\"domcontentloaded\",{timeout:5000});\n> 26 |         expect(loginHeading).toContainText(\"Login\")     \n     |                              ^\n  27 |     })\n  28 |\n  29 |     test(\"TC004\", async({page})=>{\n\n\u001b[2m    at d:\\Playwright_Typescript\\tests\\OrangeHrm.test.ts:26:30\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "d:\\Playwright_Typescript\\tests\\OrangeHrm.test.ts",
+                            "file": "d:\\Playwright_Typescript\\pages\\registerPage.ts",
                             "column": 10,
-                            "line": 7
+                            "line": 10
                           },
-                          "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[90m   at \u001b[39mtests\\OrangeHrm.test.ts:7\n\n   5 | test.describe(\"Login Page Test\",()=>{\n   6 |\n>  7 |     test.beforeEach( async({page})=>{\n     |          ^\n   8 |         await page.goto(\"https://opensource-demo.orangehrmlive.com/\");\n   9 |         await page.waitForLoadState(\"load\",{timeout:5000});\n  10 |     })\n\n\u001b[2m    at d:\\Playwright_Typescript\\tests\\OrangeHrm.test.ts:7:10\u001b[22m"
-                        },
-                        {
-                          "message": "Pending operations:\n  - page.goto at tests\\OrangeHrm.test.ts:8:20\n"
+                          "message": "locator.type: Target closed\n=========================== logs ===========================\nwaiting for locator('#input-firstname')\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\registerPage.ts:10\n\n   8 |     async enterFirstName(firstname: string){\n   9 |         await this.page.locator(\"#input-firstname\")\n> 10 |         .type(firstname);\n     |          ^\n  11 |     }\n  12 |     async enterLastName(lastname: string){\n  13 |         await this.page.locator(\"#input-lastname\")\n\n\u001b[2m    at RegisterPage.enterFirstName (d:\\Playwright_Typescript\\pages\\registerPage.ts:10:10)\u001b[22m\n\u001b[2m    at d:\\Playwright_Typescript\\pomtests\\AddToCartUsingFixture.test.ts:15:28\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-03-21T09:47:22.332Z",
+                      "startTime": "2023-04-05T12:09:14.185Z",
                       "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "d:\\Playwright_Typescript\\test-results\\pomtests-AddToCartUsingFixture-SmokeTest-Register-test-01\\video.webm"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "d:\\Playwright_Typescript\\test-results\\tests-OrangeHrm-Login-Page-Test-TC004\\trace.zip"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "d:\\Playwright_Typescript\\test-results\\tests-OrangeHrm-Login-Page-Test-TC004\\test-failed-1.png"
+                          "path": "d:\\Playwright_Typescript\\test-results\\pomtests-AddToCartUsingFixture-SmokeTest-Register-test-01\\trace.zip"
                         }
                       ],
                       "errorLocation": {
-                        "file": "d:\\Playwright_Typescript\\tests\\OrangeHrm.test.ts",
-                        "column": 30,
-                        "line": 26
+                        "file": "d:\\Playwright_Typescript\\pages\\registerPage.ts",
+                        "column": 10,
+                        "line": 10
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "f0ce0546f8051ee82333-15332b64b19f4301ef09",
-              "file": "tests/OrangeHrm.test.ts",
-              "line": 29,
+              "id": "2f902deac2ce816b0ad3-75f218cde88b5f36c42e",
+              "file": "pomtests/AddToCartUsingFixture.test.ts",
+              "line": 10,
               "column": 9
+            },
+            {
+              "title": "Login test_02",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [
+                    {
+                      "type": "skip"
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-04-05T12:09:46.049Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2f902deac2ce816b0ad3-8bc13bb0936403af6cba",
+              "file": "pomtests/AddToCartUsingFixture.test.ts",
+              "line": 30,
+              "column": 10
             }
           ]
         }

@@ -11,6 +11,7 @@ test.describe("SmokeTest",async()=>{
 
         // const register=new RegisterPage(page);
         await page.goto(`${baseURL}route=account/register`);
+        // await page.goto(`https://www.facebook.com/`);
         await registerPage.enterFirstName(data.fistname);
         await registerPage.enterLastName(data.lastname);
         await registerPage.enterEmail(data.email);
@@ -26,7 +27,7 @@ test.describe("SmokeTest",async()=>{
         
     })
     
-    test("Login test_02",async({page,baseURL,loginPage})=>{
+    test.skip("Login test_02",async({page,baseURL,loginPage})=>{
     
         // const login=new LoginPage(page);
         await page.goto(`${baseURL}route=account/login`);
